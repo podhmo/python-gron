@@ -61,3 +61,12 @@ output
   json["three-b"] = "3";
   json.two = 2.2;
 
+command line
+----------------------------------------
+
+it is also ok.
+
+.. code-block:: bash
+
+  $ pygron <file>.json
+  $ cat <file>.json | pygron
