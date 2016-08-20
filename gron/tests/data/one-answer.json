@@ -15,5 +15,5 @@ json.four[3] = 4;
 json.id = 66912849;
 json.isnull = null;
 json.one = 1;
-json.two = 2.2;
 json["three-b"] = "3";
+json.two = 2.2;
