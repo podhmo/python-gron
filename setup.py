@@ -52,5 +52,7 @@ setup(name='gron',
       tests_require=tests_require,
       test_suite="gron.tests",
       entry_points="""
+      [console_scripts]
+      pygron = gron:main
 """)
 

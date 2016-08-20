@@ -46,3 +46,19 @@ def to_path(path, rx=re.compile("^[a-zA-Z][_0-9a-zA-Z]+$")):
 def gron(data, root='json'):
     r = walk(data, root)
     return r
+
+
+def main():
+    import sys
+    import json
+    import os.path
+
+    if len(sys.argv) <= 1:
+        data = json.load(sys.stdin)
+        print("\n".join(gron(data)))
+    else:
+        for filename in sys.argv[1:]:
+            if os.path.exists(filename):
+                with open(filename) as rf:
+                    data = json.load(rf)
+                    print("\n".join(gron(data)))
